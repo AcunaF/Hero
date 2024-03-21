@@ -2,7 +2,6 @@ import React from "react";
 import {Navbar} from "../../ui/index.js";
 import {Navigate, Route, Routes} from "react-router-dom";
 import {DcPages, Marvel,Hero,Search} from "../pages/index.jsx";
-import {Login} from "../../auth/pages/Login.jsx";
 
 export const HeroRutes = () => {
     return (
