@@ -158,5 +158,38 @@ export const heroes = [
         'alter_ego':'Norrin Radd',
         'first_appearance':'The Fantastic Four #48',
         'characters':'Norrin Radd'
-    }
+    },
+    {
+        'id': 'marvel-nick',
+        'superhero':'Nick Fury',
+        'publisher':'Marvel Comics',
+        'alter_ego':'Nick Fury',
+        'first_appearance':'Sgt. Fury and his Howling Commandos #1',
+        'characters':'Nick Fury'
+    },
+    {
+        'id': 'dc-aquaman',
+        'superhero':'Aquaman',
+        'publisher':'DC Comics',
+        'alter_ego':'Arthur Curry',
+        'first_appearance':'More Fun Comics #73',
+        'characters':'Arthur Curry'
+    },
+    {
+        'id': 'dc-martian-man',
+        'superhero':'Martian Man',
+        'publisher':'DC Comics',
+        'alter_ego':'Morzz',
+        'first_appearance':'Teen Titans #37',
+        'characters':'Morzz'
+    },
+    {
+        'id': 'dc-shazam',
+        'superhero': 'Shazam',
+        'publisher': 'DC Comics',
+        'alter_ego': 'Billy Batson',
+        'first_appearance': 'Whiz Comics #2',
+        'characters': 'Billy Batson'
+    },
+
 ]
