@@ -19,7 +19,6 @@ export const Login = () => {
         navigate ('/',{
             replace: true
         });
-        console.log('el usuario', user, 'ha iniciado sesion');
     };
     const handleLogout = () => {
         logout(' ');

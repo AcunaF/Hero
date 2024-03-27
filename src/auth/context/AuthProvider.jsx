@@ -4,7 +4,6 @@ import {authReducer} from "./authReducer.js";
 import {types} from "../types/types.js";
 import {useNavigate} from "react-router-dom";
 
-
 const init = () =>  {
     const user = JSON.parse(localStorage.getItem('user')) || {isLogged: false};
     return{
@@ -31,11 +30,8 @@ export const AuthProvider = ({children}) => {
         localStorage.setItem('user', JSON.stringify(user));
         dispatch(action);
         navigate("/login");
-
     }
-
     const logout =() =>{
-        ("/login");
         const action = {
             type: types.logout
         }
@@ -46,10 +42,10 @@ export const AuthProvider = ({children}) => {
 
     return (
         <AuthContext.Provider  value={{
-            authState,
-            login: login,
+            ...authState,
+            login,
             user: authState.user,
-            logout:logout,
+            logout,
         }}>
             { children }
         </AuthContext.Provider>

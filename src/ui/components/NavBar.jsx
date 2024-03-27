@@ -4,11 +4,10 @@ import {AuthContext} from "../../auth/index.js";
 
 
 export const Navbar = () => {
-    const {user} = useContext(AuthContext);
+    const {user,logout} = useContext(AuthContext);
     console.log('El usuario', user, 'esta logueado');
 
     const navigate = useNavigate();
-
     const handleLogin = () => {
         navigate('/login', {
             replace: true
@@ -16,9 +15,9 @@ export const Navbar = () => {
     };
 
     const handleLogout = () => {
+        logout();
         navigate('/login', {
             replace: true,
-
         });
     };
 
